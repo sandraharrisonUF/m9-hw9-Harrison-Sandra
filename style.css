@@ -134,8 +134,8 @@ footer {
 @media screen and (max-width: 500px) {
   header, body, footer
 }
-@media screen {
-  nav {
-    align-items: column;
+@media  screen {
+  header {
+    float: initial;
   }
 }
