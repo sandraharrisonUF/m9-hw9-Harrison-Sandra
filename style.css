@@ -72,8 +72,8 @@ nav > a.logo {
 }
 
 main > section, main > article {
-  margin-bottom: 96px;
-  box-shadow: 4px 4px 10px var(--gray);
+  margin-bottom: 2%;
+  box-shadow: 3px 3px 8px var(--gray);
   background-color: var(--white);
 }
 
@@ -90,10 +90,11 @@ main > section.hero {
 }
 
 section.hero > .call-to-action {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: larger;
+  font-weight: 600;
+  text-align: center;
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
-  padding: 0 48px;
+  padding: 0 36px;
   margin: 0;
 }
 
@@ -107,12 +108,12 @@ section.hero > button {
 }
 
 main article {
-  padding: 48px 96px;
+  padding: 24px 48px;
 }
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 5%;
 }
 
 main > article img {
@@ -120,7 +121,7 @@ main > article img {
   width: 300px;
   height: auto;
   margin-right: 24px;
-  margin-bottom: 6px;
+  margin-bottom: 2.5%;
 }
 
 footer {
@@ -131,11 +132,51 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
+
 @media screen and (max-width: 500px) {
-  header, body, footer
+  * {
+    margin: 0;
+    padding: 0;
+    }
 }
-@media  screen {
-  header {
-    float: initial;
+@media screen and (max-width: 500px) {
+  nav {
+    font-size: smaller;
+    flex-direction: column;
+    margin-bottom: -40px;
+    }
+}
+@media screen and (max-width: 500px) {
+  nav a.logo {
+    margin: -40px 0 10px;
+    }
+}
+@media  screen and (max-width: 500px) {
+  article img {
+    float: center;
   }
+}
+@media  screen and (max-width: 500px) {
+  p {
+    margin: 15px -30px;
+    padding: 10px 0 -20px 0;
+    text-align: left;
+    font-size: 2.25vh;
+}
+}
+@media  screen and (max-width: 500px) {
+  h1, h2 {
+    font-size: larger;
+    padding: 20px 0 20px;
+}
+}
+@media  screen and (max-width: 500px) {
+  footer {
+    font-size: medium;
+    padding: 12px 0;
+}
+}
+@media  screen and (max-width: 500px) {
+  nav, h1, h2 {
+    text-align: center;
 }
